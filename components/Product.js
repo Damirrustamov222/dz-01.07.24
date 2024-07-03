@@ -45,17 +45,19 @@ export function Product(item, array) {
         product.remove()
     }
 
+
+
     change_btn.onclick = () => {
-        inp.value = name_prod.innerHTML 
-        dialog.showModal()
-    }
-    save.onclick = (e) => {
-        e.preventDefault();
+        inp.value = name_prod.innerHTML;
+        dialog.showModal();
 
-        name_prod.innerHTML =  inp.value
-        dialog.close()
+        save.onclick = (e) => {
+            e.preventDefault();
+            name_prod.innerHTML = inp.value;
+            dialog.close();
+        };
+    };
 
-    }
 
     exit.onclick = () => {
         dialog.close()
